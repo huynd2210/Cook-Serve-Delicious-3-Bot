@@ -117,8 +117,7 @@ def appendCache(ocrCache, imagePath, value):
 
 def checkCache(ocrCache, imagePath):
     hashedImage = generateImageHash(imagePath)
-    if hashedImage in ocrCache:
-        return ocrCache[hashedImage]
+    return ocrCache[hashedImage] if hashedImage in ocrCache else None
 
 def loadOCRCache():
     filePath = "ocrCache.json"

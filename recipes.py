@@ -130,6 +130,7 @@ def initHoldingStationRecipeBook():
         "Strips 4 After placing the ingredients Dunk Cook": ["s", 's', 's', 's', 'd'],
         "Falafel 4 After placing the ingredients Dunk Cook": ["f", 'f', 'f', 'f', 'd'],
         "French Fr 4 After placing the ingredients Dunk Cook": ["f", 'f', 'f', 'f', 'd'],
+        "Huauzontle 4 After placing the ingredients Dunk Cook": ["h", 'h', 'h', 'h', 'd'],
         "Turkey Leg 4": ['t', 't', 't', 't'],
         "Espresso": ['e'],
         "Ice Water Espresso": ['i', 'e'],
@@ -138,6 +139,9 @@ def initHoldingStationRecipeBook():
         "Corn 4": ['r', 'r', 'r', 'r'],
         "Corn Soy Sau Butter": ['r', 's', 'u'],
 
+        #Bunny Chow
+        "Beef Potatoes GPepper DOnion Tomato Sau Broth Leaf Turmeric Chili Pow Bay": ['b', 'p', 'g', 'n', 't', 'space', 'b', 'l', 't', 'h'],
+        'Cut Bunny Chow Top': ['c', 'b'],
         
         # Ham Slices
         "Ham Seasoning": ['h', 's'],
@@ -216,6 +220,15 @@ def initRecipeBook():
         "04 Pork Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'space', 'o', 'p'],
         "05 Veggie Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'r'],
 
+        #Egg Drop Soup
+        "EggDrop Soup": ['e', 'c', 'm'],
+
+        #Khachapuri
+        "Khachapuri": ['d', 's', 'c'],
+
+        #Grilled Cheese Sandwich
+        "Grilled Cheese Sandwich": ['s', 'n', 'd', 'w', 'c', 'h'],
+
         #Soup
         "O1 Broccoli Deluxe Soup": ['r', 'c', 'e', 'space', 'r'],
         "02 Classic Lentil": ['b', 'c', 'a', 'l'],
@@ -258,6 +271,25 @@ def initRecipeBook():
         "04 Rock n Roll Bowl": ['o', 'm', 'b', 'r', 't'],
 
         "Bibingka": ['c', 'o'],
+
+        #Huauzontle
+        "01 Green": ['h', 'g'],
+        "02 Red Hot": ['h', 's'],
+        "03 Red Mild": ['h', 't'],
+        "04 Cheesy": ['h', 'q'],
+
+        #Medovik
+        "Medovik": ['m', 'e', 'd', 'o', 'v', 'i', 'k', 's'],
+
+        #Sashimi
+        "O1 Mediterranean": ['s', 'm', 't', 'l', 'u', 'o', 'space', 't', 'c'],
+        "02 Floating Islands of Japan": ['s', 'l', 'u', 'q', 'space', 'b', 'h', 't', 'g'],
+        "03 Remember California": ['m', 't', 'l', 'w', 'space', 'h', 't', 'c', 'g'],
+        "04 Reef Paradise": ['s', 'm', 'l', 'u', 'q', 'w', 'space', 'h', 'c'],
+        "05 Classic Fishnet": ['t', 'l', 'o', 'w', 'space', 'b', 'h', 't', 'c'],
+        "07 Atlantic Special": ['m', 'u', 'o', 'q', 'w', 'space', 'h', 't', 'c'],
+        "06 The Ocean Blue": ['m', 't', 'l', 'q', 'w', 'space', 'b', 'h', 'g'],
+        "08 Pacific Coast": ['s', 'm', 't', 'q', 'space', 'b', 't', 'c', 'g'],
 
         # Sizzling Fajitas
         "O1 Beef Fajita Sizzler": ['o', 'n', 'g', 'r', 'y', 'b'],

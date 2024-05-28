@@ -41,6 +41,8 @@ def cookCustomOrder(recipeName, customOrderRecipes, ocrReader):
     customRecipeToCook = customOrderRecipes[recipeName]
     recipeDescription = readRecipeDescription(ocrReader)
 
+    recipeDescription = recipeDescription.split(" ")
+
     # Sanitize recipe description
     for i in range(len(recipeDescription)):
         recipeDescription[i] = removeNonCharactersExceptWhitespaceAndNumbers(recipeDescription[i]).strip()
@@ -120,12 +122,15 @@ def readHoldingStationRecipe(ocrReader, ocrCache=None):
 
 
 def readRecipeDescription(ocrReader, ocrCache=None):
+    if ocrCache is None:
+        ocrCache = loadOCRCache()
+
     recipeRegionX, recipeRegionY, width, height = 440, 870, 1050, 110
     screenshotName = "recipeDescription.png"
     pyautogui.screenshot(screenshotName, region=(recipeRegionX, recipeRegionY, width, height))
 
     recipeDescription = checkCache(ocrCache, screenshotName)
-    if recipeDescription:
+    if recipeDescription is not None:
         print("Found recipe name in cache: ", recipeDescription)
         return recipeDescription
     else:
@@ -141,7 +146,7 @@ def readRecipeDescription(ocrReader, ocrCache=None):
         return recipeDescription
 
 def readRecipe(ocrReader, recipeBook, holdingStationRecipeBook, customOrderRecipes, ocrCache=None):
-    if not ocrCache:
+    if ocrCache is None:
         ocrCache = loadOCRCache()
 
     recipeName = getRecipeNameFromScreenshot(ocrReader, ocrCache)
