@@ -25,26 +25,35 @@ def initCustomoOrderRecipes():
         "Vanilla": 'v',
         "Chocolate": 'c',
         "Cookie Dou": 'd',
+        "Cookie": 'd',
         "Butter P": 'b',
+        "Butter": 'b',
         "Mint Choc": 'm',
+        "Mint": 'm',
         "Rocky Road": 'r',
+        "Rocky": 'r',
         "Praline P": 'p',
+        "Praline": 'p',
         "RSherbert": 's',
     }
 
     iceCreamSundaeIngredientPart2 = {
         "Choc Syr": 'c',
+        "Choc": 'c',
         "Straw Syr": 's',
+        "Straw": 's',
         'Nuts': 'n',
         "Gummies": 'g',
         "Bananas": 'b',
         "Hard Candy": 'h',
+        "Hard": 'h',
         "Sprinkles": 'p',
     }
 
     iceCreamSundaeIngredientPart3 = {
         "Strawberries": 's',
         "Cookie Bits": 'c',
+        "Cookie": 'c',
         'Whip': 'w',
     }
 
@@ -65,13 +74,17 @@ def initCustomoOrderRecipes():
     banhMiIngredientPart1 = {
         "Chicken": 'k',
         "Tofu Slices": 't',
+        "Tofu": 't',
         "Ground Meat": 'm',
-        "Pork Tender": 'p'
+        "Ground": 'm',
+        "Pork Tender": 'p',
+        "Pork": 'p',
     }
 
     banhMiIngredientPart2 = {
         "WOnions": 'n',
         "Quail Eggs": 'e',
+        "Quail": 'e',
         "Cilantro": 'l',
         'Bread': 'b',
         "Carrots": 'a',
@@ -87,6 +100,7 @@ def initCustomoOrderRecipes():
         "Bacon": 'b',
         "Capicola": 'c',
         "Roast Beef": 'r',
+        "Roast": 'r',
         "Meatballs": 'm',
         "Salami": 's',
     }
@@ -109,8 +123,22 @@ def initCustomoOrderRecipes():
         "Cucumber": 'u',
         "POnions": 'n',
         "White Bread": 'w',
+        "White": 'w',
         "Wheat Bread": 'h',
+        "Wheat": 'h',
         "Rosemary Bread": 'r',
+        "Rosemary": 'r',
+    }
+
+    halohaloIngredientPart1 = {
+        'Ube': 'u',
+        "Jack": 'j',
+        "Garbanzo": 'g',
+    }
+    
+    halohaloIngredientPart2 = {
+        'Banana': 'b',
+        "Tapioca": 't',
     }
 
     customOrderRecipes = {
@@ -136,14 +164,54 @@ def initHoldingStationRecipeBook():
         "Espresso": ['e'],
         "Ice Water Espresso": ['i', 'e'],
 
-        #Yaki Tomorokoshi
+        # Corn Dog
+        "Corndog Close": ['c', 'l'],
+
+        # Yaki Tomorokoshi
         "Corn 4": ['r', 'r', 'r', 'r'],
         "Corn Soy Sau Butter": ['r', 's', 'u'],
 
-        #Bunny Chow
-        "Beef Potatoes GPepper DOnion Tomato Sau Broth Leaf Turmeric Chili Pow Bay": ['b', 'p', 'g', 'n', 't', 'space', 'b', 'l', 't', 'h'],
+        # Lobster Sauces
+        "Asian Sauce": ['a'],
+        "Spicy Sauce": ['s'],
+        "Butter": ['u'],
+        "Garlic Sauce": ['g'],
+        "Coconut Sauce": ['o'],
+        "Ginger Sauce": ['i'],
+
+        # Gelato
+        "Red Velvet": ['r'],
+        "Chocolate": ['c'],
+        "Lemon Zest": ['l'],
+        "Strawberry": ['s'],
+        "Mango": ['a'],
+        "Pistachio": ['p'],
+        "Vanilla": ['v'],
+        "Dragon Fruit": ['d'],
+
+        "Peach": ['space', 'p'],
+        "Stracciatella": ['space', 's'],
+        "Cotton Candy": ['space', 'o'],
+        "Rich Coffee": ['space', 'r'],
+        "Amarena": ['space', 'a'],
+        "Hazelnut": ['space', 'h'],
+        "Zabaione": ['space', 'z'],
+        "Cheesecake": ['space', 'c'],
+
+        "Kiwi": ['space', 'space', 'k'],
+        "Peppermint": ['space', 'space', 'p'],
+        "Cookies and Cream": ['space', 'space', 'c'],
+        "Caramel": ['space', 'space', 'a'],
+        "Puffo": ['space', 'space', 'u'],
+        "Cinnamon": ['space', 'space', 'i'],
+        "Banana": ['space', 'space', 'b'],
+        "Raspberry": ['space', 'space', 'r'],
+
+        # Bunny Chow
+        "Beef Potatoes GPepper DOnion Tomato Sau Broth Leaf Turmeric Chili Pow Bay": ['b', 'p', 'g', 'n', 't', 'space',
+                                                                                      'b', 'l', 't', 'h'],
         'Cut Bunny Chow Top': ['c', 'b'],
-        
+
         # Ham Slices
         "Ham Seasoning": ['h', 's'],
 
@@ -156,6 +224,14 @@ def initHoldingStationRecipeBook():
         # Bibingka
         "Banana Leaf Batter": ['l', 'b'],
 
+        # Yakizakana
+        "Albacore": ['a'],
+        "Tilapia": ['t'],
+        "Blue Fin Tuna": ['b'],
+        "Red Snapper": ['r'],
+        "Salmon": ['s'],
+        "Mackerel": ['k'],
+        "Mahi Mahi Tuna": ['m'],
         # Deluxe Nachos
         "Chicken Shrimp Beef Ground Meat": ['k', 'h', 'b', 'm'],
 
@@ -197,40 +273,73 @@ def initRecipeBook():
 
         "Chicken Kiev": ['k', 'p', 'l', 'l', 'r', 'h', 'c', 'f'],
 
-        #Okroshka
+        # Okroshka
         "01 Pork Train": ['r', 'u', 'e', 'o', 'p', 'space', 'y', 'b'],
         "02 Beef Train": ['r', 'b', 'u', 'e', 'o', 'space', 'y', 'b'],
         "03 Chicken Train": ['r', 'k', 'u', 'e', 'o', 'space', 'y', 'b'],
+        "O3 Chicken Train": ['r', 'k', 'u', 'e', 'o', 'space', 'y', 'b'],
         "04 Ham Train": ['r', 'h', 'u', 'e', 'o', 'space', 'y', 'b'],
         "05 Meat Train": ['r', 'b', 'k', 'u', 'e', 'o', 'space', 'y', 'b'],
+        "O5 Meat Train": ['r', 'b', 'k', 'u', 'e', 'o', 'space', 'y', 'b'],
 
-        #Meatloaf
+        # Meatloaf
         "O1 Classic Meatloaf": ['m', 'a'],
         "02 Bacon Wrapped Meatloaf": ['m', 'a', 'b'],
 
-        #Steamed Momos
+        #Frozen Latte
+
+        # Steamed Momos
         "O1 Mincemeat Momos": ['d', 'f', 'space', 'm', 'w'],
         "02 Beef Momos": ['d', 'f', 'space', 'b', 'w'],
         "03 Potato Momos": ['d', 'f', 'space', 'p', 'w'],
         "04 Vegetable Momos": ['d', 'f', 'space', 'v', 'w'],
 
-        #Chow Mein
+        # Chow Mein
         "01 Beef Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'space', 'o', 'b'],
         "02 Chicken Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'space', 'o', 'k'],
         "03 Shrimp Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'space', 'o', 'h'],
         "04 Pork Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'space', 'o', 'p'],
         "05 Veggie Chow Mein": ['o', 'w', 'p', 'c', 'b', 'a', 'm', 'r'],
 
-        #Egg Drop Soup
+        # Egg Drop Soup
         "EggDrop Soup": ['e', 'c', 'm'],
 
-        #Khachapuri
+        "Lobster": ['l'],
+        "KingLobster": ['k'],
+
+        # Corndog
+        "O1 The Gerstmann": ['k'],
+        "01 The Gerstmann": ['k'],
+        "O1 Red Dog": ['k'],
+        "01 Red Dog": ['k'],
+        "02 Yellow Dog": ['m'],
+        "O2 Yellow Dog": ['m'],
+        "03 Deluxe Dog": ['k', 'm'],
+        "O3 Deluxe Dog": ['k', 'm'],
+        "04 Dog Dry": [],
+        "O4 Dog Dry": [],
+
+        # Tabbouleh
+        "01 Tabbouleh Sunrise": ['p', 'space', 't', 'a', 'g'],
+        "O1 Tabbouleh Sunrise": ['p', 'space', 't', 'a', 'g'],
+        "02 Tabbouleh Nights": ['p', 'space', 'n', 'u', 'm'],
+        "O2 Tabbouleh Nights": ['p', 'space', 'n', 'u', 'm'],
+        "03 Tabbouleh Teak": ['c', 'space', 't', 'a', 'p'],
+        "O3 Tabbouleh Teak": ['c', 'space', 't', 'a', 'p'],
+        "04 Tabbouleh Fire": ['c', 'space', 'n', 't', 'g'],
+        "O4 Tabbouleh Fire": ['c', 'space', 'n', 't', 'g'],
+        "05 Tabbouleh Earl": ['b', 'space', 'u', 'm', 'g'],
+        "O5 Tabbouleh Earl": ['b', 'space', 'u', 'm', 'g'],
+        "06 Tabbouleh Field": ['b', 'space', 'n', 'a', 'p'],
+        "O6 Tabbouleh Field": ['b', 'space', 'n', 'a', 'p'],
+
+        # Khachapuri
         "Khachapuri": ['d', 's', 'c'],
 
-        #Grilled Cheese Sandwich
+        # Grilled Cheese Sandwich
         "Grilled Cheese Sandwich": ['s', 'n', 'd', 'w', 'c', 'h'],
 
-        #Soup
+        # Soup
         "O1 Broccoli Deluxe Soup": ['r', 'c', 'e', 'space', 'r'],
         "02 Classic Lentil": ['b', 'c', 'a', 'l'],
         "03 Tortilla Soup": ['t', 'n', 'space', 't'],
@@ -240,18 +349,18 @@ def initRecipeBook():
 
         "Pancit": ['n', 'e', 'c', 'o', 'h', 'k'],
 
-        #Haemul Panjeon
+        # Haemul Panjeon
         "O1 Squid Special": ['b', 'c', 'u', 'q', 'j', 's'],
         "02 Shrimp Special": ['b', 'c', 'u', 'j', 's', 'h'],
         "03 Gourmet Special": ['b', 'c', 'u', 'q', 'j', 's', 'h'],
 
-        #Pupusas
+        # Pupusas
         "01 Chicken Pupusas": ['d', 'l', 'k', 'f'],
         "02 Cheese Pupusas": ['d', 'l', 'c', 'f'],
         "03 Pork Pupusas": ['d', 'l', 'p', 'f'],
         "04 Bean Pupusas": ['d', 'l', 'b', 'f'],
 
-        #Seaboil
+        # Seaboil
         "O1 Rare Boil": ['b', 'c', 'w', 'o', 'p', 'u', 'h'],
         "02 Delicious Boil": ['r', 'c', 'w', 'o', 'p', 'u', 'h'],
 
@@ -275,16 +384,16 @@ def initRecipeBook():
 
         "Bibingka": ['c', 'o'],
 
-        #Huauzontle
+        # Huauzontle
         "01 Green": ['h', 'g'],
         "02 Red Hot": ['h', 's'],
         "03 Red Mild": ['h', 't'],
         "04 Cheesy": ['h', 'q'],
 
-        #Medovik
+        # Medovik
         "Medovik": ['m', 'e', 'd', 'o', 'v', 'i', 'k', 's'],
 
-        #Sashimi
+        # Sashimi
         "O1 Mediterranean": ['s', 'm', 't', 'l', 'u', 'o', 'space', 't', 'c'],
         "02 Floating Islands of Japan": ['s', 'l', 'u', 'q', 'space', 'b', 'h', 't', 'g'],
         "03 Remember California": ['m', 't', 'l', 'w', 'space', 'h', 't', 'c', 'g'],
@@ -320,6 +429,11 @@ def initRecipeBook():
         # Sushi
         "O1 California Roll": ['r', 'e', 'v', 's', 'space', 'y', 'space', 'r', 'r', 'c', 'c', 'c', 'c', 'c', 'c', 'c',
                                'c', 'c'],
+
+        "01 California Roll": ['r', 'e', 'v', 's', 'space', 'y', 'space', 'r', 'r', 'c', 'c', 'c', 'c', 'c', 'c',
+                               'c',
+                               'c', 'c'],
+
         "02 Spider Roll": ['r', 'e', 'v', 'space', 'y', 'c', 'space', 'r', 'r', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c',
                            'c'],
         "03 Ocean Roll": ['r', 'u', 'a', 'c', 'space', 'w', 't', 'space', 'r', 'r', 'c', 'c', 'c', 'c', 'c', 'c', 'c',
@@ -347,12 +461,14 @@ def initRecipeBook():
         "03 Plains": ['c', 'a', 'b', 'g', 'p', 't'],
         "02 Hills": ['c', 'a', 'b', 'e', 't'],
         'O1 Mountains': ['c', 'b', 'l', 'g', 't'],
+        '01 Mountains': ['c', 'b', 'l', 'g', 't'],
 
         "Onigiri": ['r', 'i', 's', 'h', 'n'],
 
         # Pad Thai
         "Pad Thai": ['n', 'h', 'b', 'r'],
         "O1 Pad Thai": ['p', 'c', 'i', 'l'],
+        "01 Pad Thai": ['p', 'c', 'i', 'l'],
         "02 Pad Thai wlo Cilantro": ['p', 'c', 'i'],
 
         # Spaghetti
@@ -428,11 +544,14 @@ def initRecipeBook():
 
         # Omelette
         "O1 Classic Omelette": ['e', 'c', 'b', 't', 'm', 'space', 's'],
+        "01 Classic Omelette": ['e', 'c', 'b', 't', 'm', 'space', 's'],
+
         "02 Hammy Sunrise": ['e', 'h', 'c', 'b'],
         "03 The Pepper and the Egg": ['e', 'c', 'space', 'g', 'r', 'y', 's'],
         "04 The OozeCheesy Squeezy": ['e', 'z', 'c', 'n', 'space', 'u'],
         "05 Deluxe Omelette": ['e', 'z', 'c', 'b', 't', 'n', 'space', 'u', 's'],
         "06 Ultra Veggie Stacker": ['e', 'z', 't', 'm', 'n', 'space', 'g', 'r', 's'],
+        "06Ultra Veggie Stacker": ['e', 'z', 't', 'm', 'n', 'space', 'g', 'r', 's'],
 
         # Tiramisu
         "Classic Tiramisu": ['l', 'c', 'm', 'p', 'l', 'c', 'm', 'p'],
@@ -443,6 +562,7 @@ def initRecipeBook():
 
         # Food Truck Rice
         "O1 White Rice": ['w', 'r', 's', 'l'],
+        "01 White Rice": ['w', 'r', 's', 'l'],
         "02 Forbidden Rice": ['w', 'f', 's', 'l'],
         "03 Brown Rice": ['w', 'b', 's', 'l'],
         "04 Wild Rice": ['w', 'i', 's', 'l'],
@@ -484,6 +604,7 @@ def initRecipeBook():
         "O1 Mango Tea": ['b', 'i', 'space', 'a', 'space', 's'],
         "02 Strawberry Tea": ['b', 'i', 'space', 's', 'space', 's'],
         "03 Matcha Tea": ['b', 'i', 'space', 'm', 'space', 's'],
+        "03Matcha Tea": ['b', 'i', 'space', 'm', 'space', 's'],
         "04 Blueberry Tea": ['b', 'i', 'space', 'l', 'space', 's'],
         "05 Thai Milk": ['b', 'i', 'space', 'h', 'space', 's'],
         "06 Taro": ['b', 'i', 'space', 't', 'space', 's'],
@@ -498,10 +619,13 @@ def initRecipeBook():
 
         # Desert Shooter
         "O1 Double Mocha Cheesecake": ['m', 'm', 'c'],
+        "01 Double Mocha Cheesecake": ['m', 'm', 'c'],
         "02 Tiramisu Creme": ['t', 't', 'b'],
+        "O2 Tiramisu Creme": ['t', 't', 'b'],
         "03 Banapple": ['a', 'b', 'b'],
         "04 Dark Creamy Goodness": ['m', 'm', 'b'],
         "05 Chocolate Lime Key": ['m', 'm', 'k'],
+        "05 Chocolate Key Lime": ['m', 'm', 'k'],
         "06 The Chicago Sampler": ['c', 'b', 'k'],
         "07 Mexican Paradise": ['m', 'a', 't'],
         "08 The San Francisco Sampler": ['t', 'b', 'k'],
