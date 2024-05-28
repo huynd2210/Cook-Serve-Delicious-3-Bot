@@ -142,5 +142,5 @@ def saveImageOCRCacheToFile(ocrCache):
     existing_data.update(ocrCache)
 
     with open(filePath, 'w') as file:
-        json.dump(existing_data, file)
+        json.dump(existing_data, file, indent=4)
 

@@ -52,6 +52,7 @@ def initCustomoOrderRecipes():
         "Chives": 'c',
         "Radish": 'r',
         "Onion Shoot": 'n',
+        "Onion": 'n',
         "Cilantro": 'l',
         "Jalapeno": 'j',
         "Basil": 'b',
@@ -255,7 +256,9 @@ def initRecipeBook():
         "02 Delicious Boil": ['r', 'c', 'w', 'o', 'p', 'u', 'h'],
 
         # Chicken Breast
+        "O1 Winners Dinner": ['k', 't', 't', 't', 't', 't', 't', 's'],
         "O1 Chicken Breast": ['k', 't', 't', 't', 't', 't', 't', 's'],
+        "01 Chicken Breast": ['k', 't', 't', 't', 't', 't', 't', 's'],
         "02 Breaded Chicken Breast": ['k', 't', 't', 't', 't', 't', 't', 'b'],
 
         # Lasagna

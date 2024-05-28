@@ -96,7 +96,7 @@ def cook(ocrReader, recipeBook, holdingStationRecipeBook, customOrderRecipes, oc
     return recipeName
 
 def getRecipeNameFromScreenshot(ocrReader, ocrCache=None):
-    recipeRegionX, recipeRegionY, width, height = 600, 827, 700, 55
+    recipeRegionX, recipeRegionY, width, height = 630, 835, 650, 50
     screenshotName = "test.png"
     pyautogui.screenshot(screenshotName, region=(recipeRegionX, recipeRegionY, width, height))
 
@@ -125,7 +125,7 @@ def readRecipeDescription(ocrReader, ocrCache=None):
     if ocrCache is None:
         ocrCache = loadOCRCache()
 
-    recipeRegionX, recipeRegionY, width, height = 440, 870, 1050, 110
+    recipeRegionX, recipeRegionY, width, height = 457, 870, 1010, 110
     screenshotName = "recipeDescription.png"
     pyautogui.screenshot(screenshotName, region=(recipeRegionX, recipeRegionY, width, height))
 
